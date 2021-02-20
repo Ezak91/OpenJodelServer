@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# sqlalchemy migrations
+/migrations
+
+# database 
+/app/main/openjodel_test.db
