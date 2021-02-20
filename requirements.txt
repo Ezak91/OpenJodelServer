@@ -23,6 +23,9 @@ mccabe==0.6.1
 pycparser==2.20
 PyJWT==2.0.1
 pylint==2.6.2
+pylint-flask==0.6
+pylint-flask-sqlalchemy==0.2.0
+pylint-plugin-utils==0.6
 pyrsistent==0.17.3
 python-dateutil==2.8.1
 python-editor==1.0.4
