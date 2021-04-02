@@ -132,4 +132,5 @@ dmypy.json
 /migrations
 
 # database 
+/app/main/openjodel.db
 /app/main/openjodel_test.db
