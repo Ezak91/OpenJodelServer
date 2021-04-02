@@ -9,6 +9,7 @@ from app.main import create_app, DB
 
 # database model
 from app.main.model import user
+from app.main.model import blacklist_token
 
 app = create_app(os.getenv('BOILERPLATE_ENV') or 'dev')
 app.register_blueprint(blueprint)
@@ -29,7 +30,7 @@ def run():
 def test():
     """Runs the unit tests."""
     tests = unittest.TestLoader().discover('app/test', pattern='test*.py')
-    result = unittest.TextTestRunner(verbosity=2).run(tests)
+    result = unittest.TextTestRunner(verbosity=3).run(tests)
     if result.wasSuccessful():
         return 0
     return 1
